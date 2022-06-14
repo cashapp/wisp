@@ -83,10 +83,9 @@ Cutting a Release
       "s/VERSION_NAME=.*/VERSION_NAME=$RELEASE_VERSION/g" \
       gradle.properties
     sed -i "" \
-      "s/\"com.squareup.misk:\([^\:]*\):[^\"]*\"/\"com.squareup.misk:\1:$RELEASE_VERSION\"/g" \
+      "s/\"app.cash.wisp:\([^\:]*\):[^\"]*\"/\"app.cash.wisp:\1:$RELEASE_VERSION\"/g" \
       `find . -name "README.md"`
-    miskweb ci-build -e
-    ./gradlew clean uploadArchives
+    gradle clean uploadArchives
     ```
 
 5. Visit [Sonatype Nexus][sonatype_nexus] to promote (close then release) the artifact. Or drop it if there is a problem!
@@ -97,7 +96,7 @@ Cutting a Release
 
     ```
     git commit -am "Prepare for release $RELEASE_VERSION."
-    git tag -a misk-$RELEASE_VERSION -m "Version $RELEASE_VERSION"
+    git tag -a wisp-$RELEASE_VERSION -m "Version $RELEASE_VERSION"
     sed -i "" \
       "s/VERSION_NAME=.*/VERSION_NAME=$NEXT_VERSION/g" \
       gradle.properties
