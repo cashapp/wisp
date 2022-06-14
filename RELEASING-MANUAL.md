@@ -6,7 +6,7 @@ These should generally not be needed but are kept here for posterity. The CI aut
 ### Prerequisite: Sonatype (Maven Central) Account
 
 Create an account on the [Sonatype issues site][sonatype_issues]. Ask an existing publisher to open
-an issue requesting publishing permissions for `misk` projects.
+an issue requesting publishing permissions for `wisp` projects.
 
 ### Prerequisite: GPG Keys
 

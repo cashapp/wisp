@@ -17,7 +17,7 @@ Releasing
       "s/VERSION_NAME=.*/VERSION_NAME=$RELEASE_VERSION/g" \
       gradle.properties
     sed -i "" \
-      "s/\"com.squareup.misk:\([^\:]*\):[^\"]*\"/\"com.squareup.misk:\1:$RELEASE_VERSION\"/g" \
+      "s/\"app.cash.wisp:\([^\:]*\):[^\"]*\"/\"app.cash.wisp:\1:$RELEASE_VERSION\"/g" \
       `find . -maxdepth 2 -name "README.md"`
     ```
 
@@ -25,7 +25,7 @@ Releasing
 
     ```
     git commit -am "Prepare for release $RELEASE_VERSION."
-    git tag -a misk-$RELEASE_VERSION -m "Version $RELEASE_VERSION"
+    git tag -a wisp-$RELEASE_VERSION -m "Version $RELEASE_VERSION"
     git push && git push --tags
     ``` 
 

@@ -9,19 +9,14 @@ and style in order to keep the code as readable as possible.
 Before your code can be accepted into the project you must also sign the
 [Individual Contributor License Agreement (CLA)][1].
 
-## Building Misk locally
+## Building Wisp locally
+
+Install Hermit (TODO - instructions)
 
 Use gradle to run all Kotlin tests locally:
 
 ```shell
-./gradlew build
-```
-
-misk-hibernate tests expect a mysql server running on `localhost:3306` with no password set on
-the root user. You might stand up a server with a docker image, e.g.
-
-```shell
-docker run -d --rm --name "mysql-57" -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true -e MYSQL_LOG_CONSOLE=true mysql:5.7 --sql-mode=""
+gradle build
 ```
 
 ## Breaking changes
