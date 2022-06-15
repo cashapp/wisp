@@ -1,17 +1,18 @@
 Manual Releasing Steps
 =========
 
-These should generally not be needed but are kept here for posterity. The CI auto-releasing in Github Actions should be sufficient, and is documented in the `Releasing` doc.
+These should generally not be needed but are kept here for posterity. The CI auto-releasing in Github Actions should be
+sufficient, and is documented in the `Releasing` doc.
 
 ### Prerequisite: Sonatype (Maven Central) Account
 
-Create an account on the [Sonatype issues site][sonatype_issues]. Ask an existing publisher to open
-an issue requesting publishing permissions for `wisp` projects.
+Create an account on the [Sonatype issues site][sonatype_issues]. Ask an existing publisher to open an issue requesting
+publishing permissions for `wisp` projects.
 
 ### Prerequisite: GPG Keys
 
-Generate a GPG key (RSA, 4096 bit, 3650 day) expiry, or use an existing one. You should leave the
-password empty for this key.
+Generate a GPG key (RSA, 4096 bit, 3650 day) expiry, or use an existing one. You should leave the password empty for
+this key.
 
 ```
 $ gpg --full-generate-key 
@@ -49,13 +50,12 @@ signing.secretKeyRingFile=/Users/jwilson/.gnupg/secring.gpg
 
 `signing.password` is the password for this key. This might be empty!
 
-`signing.secretKeyRingFile` is the absolute path for `secring.gpg`. You may need to export this
-file manually with the following command where `XXXXXXXX` is the `keyId` above:
+`signing.secretKeyRingFile` is the absolute path for `secring.gpg`. You may need to export this file manually with the
+following command where `XXXXXXXX` is the `keyId` above:
 
    ```
    $ gpg --keyring secring.gpg --export-secret-key XXXXXXXX > ~/.gnupg/secring.gpg
    ```
-
 
 Cutting a Release
 -----------------
@@ -88,9 +88,10 @@ Cutting a Release
     gradle clean uploadArchives
     ```
 
-5. Visit [Sonatype Nexus][sonatype_nexus] to promote (close then release) the artifact. Or drop it if there is a problem!
+5. Visit [Sonatype Nexus][sonatype_nexus] to promote (close then release) the artifact. Or drop it if there is a
+   problem!
 
-    ![Sonatype Release](/img/sonatype-release.gif)
+   ![Sonatype Release](/img/sonatype-release.gif)
 
 6. Tag the release, prepare for the next one, and push to GitHub.
 
@@ -104,5 +105,6 @@ Cutting a Release
     git push && git push --tags
     ```
 
- [sonatype_issues]: https://issues.sonatype.org/
- [sonatype_nexus]: https://oss.sonatype.org/
+[sonatype_issues]: https://issues.sonatype.org/
+
+[sonatype_nexus]: https://oss.sonatype.org/
