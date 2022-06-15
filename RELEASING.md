@@ -29,9 +29,10 @@ Releasing
     git push && git push --tags
     ``` 
 
-5. Trigger the "Publish a release" action manually. Wait until it completes, then visit [Sonatype Nexus][sonatype_nexus] to promote (close then release) the artifact. Or drop it if there is a problem!
+5. Trigger the "Publish a release" action manually. Wait until it completes, then visit [Sonatype Nexus][sonatype_nexus]
+   to promote (close then release) the artifact. Or drop it if there is a problem!
 
-    ![Sonatype Release](/img/sonatype-release.gif)
+   ![Sonatype Release](/img/sonatype-release.gif)
 
 6. In a new branch, prepare for the next release and push to GitHub. Submit and merge PR.
 
@@ -43,10 +44,12 @@ Releasing
     git push
     ```
 
-7. Draft a new [release](https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository) of `A.B.C` to trigger the "Publish the mkdocs to gh-pages" action.
+7. Draft a new [release](https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository)
+   of `A.B.C` to trigger the "Publish the mkdocs to gh-pages" action.
 
 ## Troubleshooting
 
-If the github action fails, drop the artifacts from Sonatype and re run the job. You might need to delete the plugin off the JetBrains plugin portal first if the ubuntu job which publishes it already succeeded.
+If the github action fails, drop the artifacts from Sonatype and re run the job. You might need to delete the plugin off
+the JetBrains plugin portal first if the ubuntu job which publishes it already succeeded.
 
 [sonatype_nexus]: https://oss.sonatype.org/
