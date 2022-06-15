@@ -4,7 +4,6 @@ object Dependencies {
     val bouncycastle = "org.bouncycastle:bcprov-jdk15on:1.69"
     val dockerCore = "com.github.docker-java:docker-java-core:3.2.13"
     val dockerTransport = "com.github.docker-java:docker-java-transport-httpclient5:3.2.13"
-    val dokkaGradlePlugin = "org.jetbrains.dokka:dokka-gradle-plugin:1.6.10"
     val grpcBom = "io.grpc:grpc-bom:1.47.0"
     val hopliteCore = "com.sksamuel.hoplite:hoplite-core:2.1.5"
     val hopliteHocon = "com.sksamuel.hoplite:hoplite-hocon:2.1.5"
@@ -12,7 +11,6 @@ object Dependencies {
     val hopliteToml = "com.sksamuel.hoplite:hoplite-toml:2.1.5"
     val hopliteYaml = "com.sksamuel.hoplite:hoplite-yaml:2.1.5"
     val jacksonBom = "com.fasterxml.jackson:jackson-bom:2.13.3"
-    val jgit = "org.eclipse.jgit:org.eclipse.jgit:5.12.0.202106070339-r"
     val jnrUnixsocket = "com.github.jnr:jnr-unixsocket:0.38.8"
     val junitApi = "org.junit.jupiter:junit-jupiter-api:5.8.2"
     val junitEngine = "org.junit.jupiter:junit-jupiter-engine:5.8.2"
@@ -48,7 +46,4 @@ object Dependencies {
     val prometheusClient = "io.prometheus:simpleclient:0.9.0"
     val protobufGradlePlugin = "com.google.protobuf:protobuf-gradle-plugin:0.8.17"
     val slf4jApi = "org.slf4j:slf4j-api:1.7.32"
-    val tempest2TestingDocker = "app.cash.tempest:tempest2-testing-docker:1.6.2"
-    val tempestTestingDocker = "app.cash.tempest:tempest-testing-docker:1.6.2"
-    val tink = "com.google.crypto.tink:tink:1.6.1"
 }
