@@ -6,7 +6,6 @@ object Dependencies {
     val dockerTransport = "com.github.docker-java:docker-java-transport-httpclient5:3.2.13"
     val dokkaGradlePlugin = "org.jetbrains.dokka:dokka-gradle-plugin:1.6.10"
     val grpcBom = "io.grpc:grpc-bom:1.47.0"
-    val guava = "com.google.guava:guava:30.1.1-jre"
     val hopliteCore = "com.sksamuel.hoplite:hoplite-core:2.1.5"
     val hopliteHocon = "com.sksamuel.hoplite:hoplite-hocon:2.1.5"
     val hopliteJson = "com.sksamuel.hoplite:hoplite-json:2.1.5"
