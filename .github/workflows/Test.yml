@@ -23,7 +23,7 @@ jobs:
       matrix:
         os: [ubuntu-latest]
         cmd:
-          - bin/gradle test -i --scan
+          - bin/gradle test -i --scan --no-daemon
 
     steps:
       - name: Checkout
