@@ -16,20 +16,6 @@ env:
   TERM: dumb
 
 jobs:
-  js:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Test
-        run: ${{ matrix.cmd }}
-
   jvm:
     runs-on: ${{ matrix.os }}
 
