@@ -2,6 +2,7 @@ apply plugin: "com.vanniktech.maven.publish"
 
 plugins.withId("com.vanniktech.maven.publish") {
     mavenPublish {
+        sonatypeHost=""
         releaseSigningEnabled = !getGpgKey().isEmpty()
     }
 }
