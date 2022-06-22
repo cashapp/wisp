@@ -11,7 +11,7 @@ Before your code can be accepted into the project you must also sign the
 
 ## Building Wisp locally
 
-Install Hermit (TODO - instructions)
+Install Hermi, see instructions at https://cashapp.github.io/hermit/
 
 Use gradle to run all Kotlin tests locally:
 
