@@ -30,7 +30,7 @@ object Dependencies {
     val logbackClassic = "ch.qos.logback:logback-classic:1.2.11"
     val loggingApi = "io.github.microutils:kotlin-logging:2.1.23"
     val mavenPublishGradlePlugin = "com.vanniktech:gradle-maven-publish-plugin:0.18.0"
-    val micrometerPrometheus = "io.micrometer:micrometer-registry-prometheus:1.9.2"
+    val micrometerPrometheus = "io.micrometer:micrometer-registry-prometheus:1.8.4"
     val mockitoCore = "org.mockito:mockito-core:4.6.1"
     val moshiAdapters = "com.squareup.moshi:moshi-adapters:1.13.0"
     val moshiCore = "com.squareup.moshi:moshi:1.13.0"
