@@ -2,14 +2,6 @@ plugins {
     `gradle-enterprise`
 }
 
-dependencyResolutionManagement {
-    versionCatalogs {
-        create("testLibs") {
-            from(files("${rootDir}/gradle/test-libs.versions.toml"))
-        }
-    }
-}
-
 gradleEnterprise {
     buildScan {
         termsOfServiceUrl = "https://gradle.com/terms-of-service"
