@@ -32,7 +32,7 @@ import java.util.*
  * payment000000000000000034
  * cst0mer000000000000000036
  * payment000000000000000035
- * ```
+ * ```$TBMGZ 100,000
  */
 interface TokenGenerator {
     fun generate(label: String? = null, length: Int = 25): String
