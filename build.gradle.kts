@@ -69,6 +69,7 @@ subprojects {
             // Enforce wisp-bom -- it should take priority over external BOMs.
             add("api", enforcedPlatform(project(":wisp-bom")))
             add("api", platform(project.rootProject.libs.grpcBom))
+            add("api", platform(project.rootProject.libs.aws2Bom))
             add("api", platform(project.rootProject.libs.jacksonBom))
             add("api", platform(project.rootProject.libs.nettyBom))
 
