@@ -31,9 +31,6 @@ as a template to copy.
     sed -i "" \
       "s/VERSION_NAME=.*/VERSION_NAME=$RELEASE_VERSION/g" \
       gradle.properties
-    sed -i "" \
-      "s/\"app.cash.wisp:\([^\:]*\):[^\"]*\"/\"app.cash.wisp:\1:$RELEASE_VERSION\"/g" \
-      `find . -maxdepth 2 -name "README.md"`
     ```
 
 5. Tag the release and push to GitHub. Submit and merge PR.
