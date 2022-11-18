@@ -82,9 +82,6 @@ Cutting a Release
     sed -i "" \
       "s/VERSION_NAME=.*/VERSION_NAME=$RELEASE_VERSION/g" \
       gradle.properties
-    sed -i "" \
-      "s/\"app.cash.wisp:\([^\:]*\):[^\"]*\"/\"app.cash.wisp:\1:$RELEASE_VERSION\"/g" \
-      `find . -name "README.md"`
     gradle clean uploadArchives
     ```
 
