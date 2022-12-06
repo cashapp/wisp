@@ -1,6 +1,6 @@
-apply plugin: "com.vanniktech.maven.publish"
+apply plugin: libs.plugins.mavenPublishGradlePlugin.get().pluginId
 
-plugins.withId("com.vanniktech.maven.publish") {
+plugins.withId(libs.plugins.mavenPublishGradlePlugin.get().pluginId) {
     mavenPublish {
         sonatypeHost="DEFAULT"
         releaseSigningEnabled = !getGpgKey().isEmpty()
