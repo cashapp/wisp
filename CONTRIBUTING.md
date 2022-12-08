@@ -36,7 +36,7 @@ To check for dependencies to update:
  gradle dependencyUpdates -Drevision=release
 ```
 
-Dependecies can be updated by editing the catalog file.
+Dependencies can be updated by editing the catalog file.
 
 The version catalog update plugin can also format and update the catalog file.  See the documentation for more detail.
 
