@@ -42,10 +42,10 @@ as a template to copy.
     # Then create PR and merge it
     ``` 
 
-6. Trigger the "Publish a release" action manually. Wait until it completes, then visit [Sonatype Nexus](https://oss.sonatype.org/)
-   to publish the artifacts. Follow the guide [here](https://central.sonatype.org/publish/release/) for detailed steps
-   on how to promote (close then release) the artifact. Or drop it if there is a problem! Be warned, the UI is awful and
-   may take much time to load the staging repository list.
+6. Trigger the "Publish a release" action manually. This will publish to
+[Sonatype Nexus](https://oss.sonatype.org/), closing and releasing the artifact automatically to
+promote it to Maven Central.  Note that it can take 10 to 30 minutes or more for the artifacts to
+appear on Maven Central.
 
 7. Checkout `main` branch and pull the latest changes
 
