@@ -3,6 +3,13 @@
 Wisp is a collection of kotlin modules providing various features and utilities, including config, logging, feature
 flags and more. Modules are deliberately kept small to allow choice of the exact set needed.
 
+# Repository Update
+
+This repository has been archived as its content has been moved to [Misk](https://github.com/cashapp/misk). 
+Please visit the new repository [Misk](https://github.com/cashapp/misk) for historical reference
+and to see the latest updates. Thank you for your past contributions and support! 
+
+
 [<img src="https://img.shields.io/maven-central/v/app.cash.wisp/wisp-bom.svg?label=latest%20release"/>](http://search.maven.org/#search%7Cga%7C1%7Capp.cash.wisp)
 
 ## Modules
